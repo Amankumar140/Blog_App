@@ -1,15 +1,17 @@
- 
-import './App.css'
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import authService from "./appwrite/auth";
 
 function App() {
-   console.log();
+  console.log();
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
 
   return (
-    
     <>
-       <h1>Hello from app</h1>
+      <h1>Hello from app</h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
